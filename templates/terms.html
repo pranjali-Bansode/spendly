@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+.terms-wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.terms-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.terms-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.terms-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.terms-section {
+    margin-bottom: 25px;
+}
+
+.terms-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.terms-section p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.last-updated {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #888;
+    text-align: right;
+}
+
+/* Optional gradient header strip */
+.terms-header {
+    height: 6px;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(90deg, #4CAF50, #00C9A7);
+    margin-bottom: 20px;
+}
+</style>
+
+<div class="terms-wrapper">
+    <div class="terms-card">
+        <div class="terms-header"></div>
+
+        <h1 class="terms-title">Terms and Conditions</h1>
+        <p class="terms-subtitle">
+            Please read these terms carefully before using Spendly.
+        </p>
+
+        <div class="terms-section">
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+                By accessing or using Spendly, you agree to be bound by these Terms and Conditions.
+                If you do not agree, please discontinue using the application.
+            </p>
+        </div>
+
+        <div class="terms-section">
+            <h2>2. Use of Service</h2>
+            <p>
+                Spendly is designed for personal expense tracking and financial insights.
+                You agree to use the platform responsibly and not engage in misuse,
+                unauthorized access, or disruptive activities.
+            </p>
+        </div>
+
+        <div class="terms-section">
+            <h2>3. User Data</h2>
+            <p>
+                You are responsible for maintaining the accuracy of your financial data.
+                While we implement reasonable security measures, we cannot guarantee absolute security.
+                Your data will not be sold to third parties.
+            </p>
+        </div>
+
+        <div class="terms-section">
+            <h2>4. Limitations of Liability</h2>
+            <p>
+                Spendly is provided "as is" without warranties of any kind.
+                We are not responsible for any financial decisions made based on the data provided by the application.
+            </p>
+        </div>
+
+        <div class="terms-section">
+            <h2>5. Changes to Terms</h2>
+            <p>
+                We may update these Terms from time to time. Continued use of Spendly
+                after changes indicates your acceptance of the revised terms.
+            </p>
+        </div>
+
+        <p class="last-updated">
+            Last updated: {{ current_year }}
+        </p>
+    </div>
+</div>
+{% endblock %}

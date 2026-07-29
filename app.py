@@ -1,11 +1,21 @@
 from flask import Flask, render_template
-
+from datetime import datetime
 app = Flask(__name__)
 
 
 # ------------------------------------------------------------------ #
 # Routes                                                              #
 # ------------------------------------------------------------------ #
+
+@app.route("/terms")
+def terms():
+    return render_template("terms.html", current_year=datetime.now().year)
+
+
+
+@app.route("/privacy")
+def privacy():
+    return render_template("privacy.html", current_year=datetime.now().year)
 
 @app.route("/")
 def landing():

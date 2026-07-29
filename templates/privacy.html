@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+/* Reuse same styling as terms page */
+.terms-wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.terms-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.terms-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.terms-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.terms-section {
+    margin-bottom: 25px;
+}
+
+.terms-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.terms-section p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.last-updated {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #888;
+    text-align: right;
+}
+
+.terms-header {
+    height: 6px;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(90deg, #4CAF50, #00C9A7);
+    margin-bottom: 20px;
+}
+</style>
+
+<div class="terms-wrapper">
+    <div class="terms-card">
+        <div class="terms-header"></div>
+
+        <h1 class="terms-title">Privacy Policy</h1>
+        <p class="terms-subtitle">
+            Your privacy matters to us. This policy explains how Spendly handles your data.
+        </p>
+
+        <div class="terms-section">
+            <h2>1. Data We Collect</h2>
+            <p>
+                We collect information you provide directly, such as your name, email,
+                and expense data entered into the application.
+            </p>
+        </div>
+
+        <div class="terms-section">
+            <h2>2. How We Use Your Data</h2>
+            <p>
+                Your data is used to provide and improve the expense tracking experience,
+                including analytics, insights, and personalized features.
+            </p>
+        </div>
+
+        <div class="terms-section">
+            <h2>3. Data Storage</h2>
+            <p>
+                Your data is stored securely using modern technologies.
+                However, no system is completely secure, and we cannot guarantee absolute protection.
+            </p>
+        </div>
+
+        <div class="terms-section">
+            <h2>4. Third-Party Services</h2>
+            <p>
+                Spendly may use third-party tools or services to improve functionality.
+                These services may process limited data as necessary.
+            </p>
+        </div>
+
+        <div class="terms-section">
+            <h2>5. Contact Us</h2>
+            <p>
+                If you have any questions about this Privacy Policy,
+                you can contact us through the application.
+            </p>
+        </div>
+
+        <p class="last-updated">
+            Last updated: {{ current_year }}
+        </p>
+    </div>
+</div>
+{% endblock %}

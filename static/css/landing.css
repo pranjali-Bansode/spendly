@@ -1,0 +1,77 @@
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+
+/* Badge */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #e6f4ef;
+    color: #1e7f5c;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.hero-badge .dot {
+    width: 8px;
+    height: 8px;
+    background: #1e7f5c;
+    border-radius: 50%;
+}
+
+/* Title */
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.hero-title span {
+    color: #2e9d74;
+}
+
+/* Subtitle */
+.hero-subtitle {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-primary {
+    background: #000;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-secondary {
+    background: #000;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hover */
+.btn-primary:hover,
+.btn-secondary:hover {
+    opacity: 0.85;
+}
